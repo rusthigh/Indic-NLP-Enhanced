@@ -30,4 +30,10 @@ print(gram)
 print("\n")
 
 
-print("Word frequency of Bigrams")
+print("Word frequency of Bigrams");
+bigram=Counter(zip(my_doc[::],my_doc[1::]))
+print(bigram)
+bigram=sorted(bigram, key=lambda i: bigram[i], reverse=True)[:10]
+print("\nTop 10 Bigrams");
+print(bigram)
+print("\n")
