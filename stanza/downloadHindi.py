@@ -1,1 +1,2 @@
-i
+import stanfordnlp
+stanfordnlp.download('hi')
